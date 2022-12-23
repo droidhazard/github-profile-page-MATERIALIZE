@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>droidhazard (Zohaib Ali)</title>
+  <link rel="stylesheet" href="./materialize.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .logo-icon {
+      font-size: 2rem;
+      position: relative;
+      top: 15px;
+      left: 15px;
+    }
+
+    nav i.material-icons {
+      line-height: 40px;
+    }
+
+    .tabs .indicator {
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav-wrapper grey darken-4">
+    <a href="./" class="brand-logo"><i class="fa-brands fa-github logo-icon"></i></a>
+    <!-- for desktop -->
+    <div class="row hide-on-med-and-down">
+      <div class="col l6 offset-l1">
+        <a class="btn-small grey darken-3 z-depth-0">Pull requests</a>
+        <a class="btn-small grey darken-3 z-depth-0">Issues</a>
+        <a class="btn-small grey darken-3 z-depth-0">Codespaces</a>
+        <a class="btn-small grey darken-3 z-depth-0">Marketplace</a>
+        <a class="btn-small grey darken-3 z-depth-0">Explore</a>
+      </div>
+      <div class="col l2 push-l3">
+        <a href="#!" class="btn-floating grey darken-3"><i class="material-icons tooltipped"
+            data-tooltip="No new notifications">notifications</i></a>
+        <a href="#!" class="btn-floating grey darken-3 dropdown-trigger" data-target="add-dropdown"><i
+            class="material-icons">add</i></a>
+        <a href="#!" class="btn-floating grey darken-3 dropdown-trigger" data-target="profile-dropdown"><i
+            class="material-icons">person</i></a>
+
+        <ul id='add-dropdown' class='dropdown-content'>
+          <li><a href="#!">New Repository</a></li>
+          <li><a href="#!">Import Repository</a></li>
+          <li><a href="#!">New codespace</a></li>
+          <li><a href="#!">New gist</a></li>
+          <li><a href="#!">New Organization</a></li>
+          <li><a href="#!">New Project</a></li>
+        </ul>
+        <ul id='profile-dropdown' class='dropdown-content'>
+          <li><a href="#!">Your Profile</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#!">Help</a></li>
+          <li><a href="#!">Settings</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#!">Signout</a></li>
+        </ul>
+      </div>
+    </div> <!-- ./row -->
+  </nav>
+
+  <!-- SEARCHBAR -->
+  <div class="row">
+    <div class="col s12">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">search</i>
+        <input type="text" name="" id="search">
+        <label for="search">Search or jump to...</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEFT COLUMN / PROFILE CARD -->
+  <main class="!container">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./user.jpeg" alt="" srcset="">
+          </div>
+          <div class="card-content">
+            <h5>Zohaib Ali</h5>
+            <h6 class="grey-text text-darken-2">@droidhazard</h6>
+            <p>i am boy, and am Learning Front End Web Development</p>
+            <br>
+            <a href="#!" class="btn grey lighten-3 black-text">Edit profile</a>
+            <span>
+              <br><br>
+              <p><i class="fa-solid fa-user-group"></i> <b>15</b> Followers</p>
+              <p> <b>28</b> Following</p>
+            </span>
+            <span>
+              <br>
+              <p><i class="fa-solid fa-building"></i> Best Company</p>
+              <p><i class="fa-brands fa-twitter"></i> @zobexeb</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col s12 m8">
+        <!-- Tabs for desktop -->
+        <ul class="tabs hide-on-small-only">
+          <li class="tab col s2"><a class="black-text" href="#photography">Overview</a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#editing">Repositories</a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#test3">Projects</a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#dummy">Packages</a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#dummy">Stars</a></li>
+        </ul>
+        <!-- Tabs for mobile -->
+        <ul class="tabs hide-on-med-and-up">
+          <li class="tab col s2"><a class="black-text" href="#photography"><i class="fa-solid fa-book-open"></i></a>
+          </li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#editing"><i
+                class="fa-solid fa-book-bookmark"></i></a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#test3"><i
+                class="fa-solid fa-table-cells-large"></i></a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#dummy"><i class="fa-solid fa-box"></i></a></li>
+          <li class="tab col s2"><a class="grey-text text-darken-3" href="#dummy"><i class="fa-solid fa-star"></i></a></li>
+        </ul>
+
+        
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+
+  <script src="./materialize.js"></script>
+  <script>
+    M.AutoInit();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      const options = {
+        alignment: 'right',
+        constrainWidth: true,
+        coverTrigger: false
+      }
+      var instances = M.Dropdown.init(elems, options);
+      // var el = document.querySelectorAll('.tabs')
+      // var instance = M.Tabs.init(el);
+    });
+  </script>
+</body>
+
+</html>
